@@ -34,7 +34,7 @@ function App() {
     <div>
       <h2>let's get started</h2>
       {expenses.map((value)=>{
-       return <ExpenseItem title={value.title} amount={value.amount} date={value.date} location={value.location}></ExpenseItem>
+       return <ExpenseItem title={value.title} amount={value.amount} date={value.date} location={value.location}/>
       })}
 
     </div>
