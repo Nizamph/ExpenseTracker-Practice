@@ -1,5 +1,5 @@
 
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from './components/Expenses';
 
 
 function App() {
@@ -32,10 +32,8 @@ function App() {
   return (
     
     <div>
-      <h2>let's get started</h2>
-      {expenses.map((value)=>{
-       return <ExpenseItem title={value.title} amount={value.amount} date={value.date} location={value.location}/>
-      })}
+  
+    <Expenses items={expenses}/>
 
     </div>
   );
