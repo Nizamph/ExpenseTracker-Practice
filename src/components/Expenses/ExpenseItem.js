@@ -5,6 +5,15 @@ import './ExpenseItem.css';
 
 
 const ExpenseItem = (props) => {
+ 
+ const clickHandler = () => {
+  console.log('clicked!!!!')
+ }
+
+ const DeleteHandler = () => {
+  console.log(props.title)
+ }
+
 
   return (
                                                 
@@ -14,7 +23,8 @@ const ExpenseItem = (props) => {
           title = {props.title}
           location = {props.location}
           amount = {props.amount}/>
-
+         <button onClick={clickHandler}>Change title</button>
+         <button onClick={DeleteHandler}>Delete</button>
            </Card> 
     
   );
