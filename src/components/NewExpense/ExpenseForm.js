@@ -8,15 +8,15 @@ const ExpenseForm = (props) => {
       const  [enteredDate,setEnteredDate] = useState('')
 
     const TitleChangeHandler = (event) => {
-        setEnteredTitle(event.props.target.value)
+        setEnteredTitle(event.target.value)
     }
        
     const AmountChangehandler = (e) => {
-        setEnteredAmount(e.props.target.value)
+        setEnteredAmount(e.target.value)
     }
       
     const DateChangehandler = (event) => {
-        setEnteredDate(event.props.target.value)
+        setEnteredDate(event.target.value)
     }
  return <form>
     <div classname="new-expense__controls">
