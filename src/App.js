@@ -29,10 +29,11 @@ const App = () => {
       location:"Timberland"
     },
   ];
-   
+
  const AddExpenseHandler = (expense) => {
     console.log("In App.js")
     console.log(expense)
+
  } 
   
   return (
