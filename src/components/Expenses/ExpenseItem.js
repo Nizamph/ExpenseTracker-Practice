@@ -9,7 +9,7 @@ const ExpenseItem = (props) => {
 
 
   return (
-                                                
+       <li>                                         
     <Card className="expense-item">
         <ExpenseDate date={props.date} />
         <ExpenseDetails 
@@ -17,7 +17,7 @@ const ExpenseItem = (props) => {
           location = {props.location}
           amount = {props.amount}/>
            </Card> 
-    
+            </li>
   );
 }
 
